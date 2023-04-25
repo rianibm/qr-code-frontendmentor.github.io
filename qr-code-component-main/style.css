@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --font-size-paragraph: 15px;
+}
+
+body {
+  min-heigth: 100vh;
+  background-color: var(--light-gray);
+}
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  margin: 1em;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.01);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+h2 {
+  color: var(--dark-blue);
+  padding-top: 8px;
+}
+
+.text {
+  color: var(--grayish-blue);
+  font-size: var(--font-size-paragraph);
+  padding: 8px 8px;
+}
+
+- Mobile: 375px
+- Desktop: 1440px
+
+@media screen and (max-width: 1440px) aand (min-width: 375px) {
+  .card {
+    width: 100%;
+    display: block;
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 1em;
+  width: 100%;
+  color: var(--grayish-blue);
+  text-align: center;
+}
